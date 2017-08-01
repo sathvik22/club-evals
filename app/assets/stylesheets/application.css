@@ -16,23 +16,5 @@
 
  */
 
-body{
-	background-color: #c90016;
-	text-align: center;
-}
 
-h1{
-	color: white;
-}
-p{
-	color: white;
-}
-a{
-	color: white;
-}
 
-.panel{
-	background-color: #c90016;
-	width: 50%;
-	margin: auto;
-}
