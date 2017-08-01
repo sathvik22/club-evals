@@ -27,8 +27,12 @@ h1{
 p{
 	color: white;
 }
+a{
+	color: white;
+}
 
 .panel{
+	background-color: #c90016;
 	width: 50%;
 	margin: auto;
 }
