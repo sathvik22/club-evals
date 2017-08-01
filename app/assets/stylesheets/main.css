@@ -1,0 +1,27 @@
+body{
+	background-color: #c90016;
+	text-align: center;
+	padding: 2rem 1rem;
+}
+
+h1{
+	color: white;
+}
+p{
+	color: blue;
+}
+a{
+	color: white;
+}
+
+.panel{
+	background-color: #c90016;
+	width: 50%;
+	margin: auto;
+}
+.top-bar{
+	background-color: #EF1B34;
+}
+.accordion{
+	background-color: red
+}
