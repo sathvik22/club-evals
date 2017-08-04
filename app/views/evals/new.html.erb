@@ -1,0 +1,17 @@
+<h1>Evaluate <%= @club.name %>!</h1>
+
+<%if @eval.errors.any?%>
+	<%@eval.errors.full_messages.each do |msg|%>
+	<div> <%=msg%></div>
+	<%end%>
+<%end%>
+
+<%= form_for([@club, @eval]) do |f| %>
+	<%=	f.label :rating%>
+	<%=	f.text_field :rating%>
+	<%=	f.label :hours, 'Hours per Week'%>
+	<%=	f.text_field :hours%>
+	<%=	f.label :review, 'Add a Comment'%>
+	<%=	f.text_field :review%>
+	<%=	f.submit "Evaluate!" %>
+<%end%>
