@@ -8,11 +8,13 @@ h1{
 	color: white;
 }
 p{
-	color: blue;
+	color: white;
 }
 a{
 	color: white;
 }
+
+
 
 .panel{
 	background-color: #c90016;
@@ -23,5 +25,8 @@ a{
 	background-color: #EF1B34;
 }
 .accordion{
-	background-color: red
+	background-color: #F54C60
+}
+.accordion-content{
+	background-color: #A40013
 }

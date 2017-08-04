@@ -7,6 +7,12 @@
 				 		<a href="#" class="accordion-title"><%= club.name %></a>
    					<div class="accordion-content" data-tab-content >
       				<p><%= club.description %></p>
+							<ul>
+								<% club.evals.each do |eval| %>
+								<li>Rating: <%= eval.rating %> <br/>Hours per Week: <%= eval.hours  %> <br/> Review: <%= eval.review %></li> 
+								<%end%>
+							</ul>
+      				<%= link_to 'Evaluate this club!', new_club_eval_path(club.id) %>
     				</div>
 					</li>
 			  <% end %>

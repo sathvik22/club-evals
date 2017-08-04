@@ -1,2 +1,8 @@
 <h1><%=@club.name%></h1>
 <p><%=@club.description%></p>
+
+<ul>
+								<% @club.evals.each do |eval| %>
+								<li>Rating: <%= eval.rating %> <br/>Hours per Week: <%= eval.hours  %> <br/> Review: <%= eval.review %></li> 
+								<%end%>
+							</ul>
