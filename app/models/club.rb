@@ -4,6 +4,6 @@ class Club < ApplicationRecord
 	validates :name, presence: true
 
 	def self.search(query)
-  where("name ilike ?", "%#{query}%") 
-end
+  	where("name ilike ? OR description ilike ?","%#{query}%", "%#{query}%")
+	end
 end
