@@ -11,6 +11,9 @@
 				 		<a href="#" class="accordion-title"><%= club.name %></a>
    					<div class="accordion-content" data-tab-content >
       				<p><%= club.description %></p>
+      				<p>Average Rating: <%= club.average_rating %></p>
+      				<p>Average Hours Spent Per Week: <%= club.average_hours %></p>
+
 							<div>
 								<% club.evals.each do |eval| %>
 								<p>Rating: <%= eval.rating %> <br/>Hours per Week: <%= eval.hours  %> <br/> Review: <%= eval.review %></p> 
