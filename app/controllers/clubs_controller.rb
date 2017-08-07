@@ -1,6 +1,10 @@
 class ClubsController < ApplicationController
 	def index
-		@clubs = Club.all
+		if params[:search]
+    	@clubs = Club.search(params[:search])
+  	else
+    	@clubs = Club.all
+  	end
 	end
 
 	def show
