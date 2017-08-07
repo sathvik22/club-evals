@@ -6,4 +6,12 @@ class Club < ApplicationRecord
 	def self.search(query)
   	where("name ilike ? OR description ilike ?","%#{query}%", "%#{query}%")
 	end
+
+	def average_rating
+		evals.sum(&:rating).to_f / evals.length.to_f
+	end
+
+	def average_hours
+		evals.sum(&:hours).to_f / evals.length.to_f
+	end
 end
