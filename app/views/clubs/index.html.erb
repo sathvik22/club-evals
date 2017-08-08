@@ -13,12 +13,8 @@
       				<p><%= club.description %></p>
       				<p>Average Rating: <%= club.average_rating %></p>
       				<p>Average Hours Spent Per Week: <%= club.average_hours %></p>
-
-							<div>
-								<% club.evals.each do |eval| %>
-								<p>Rating: <%= eval.rating %> <br/>Hours per Week: <%= eval.hours  %> <br/> Review: <%= eval.review %></p> 
-								<%end%>
-							</div>
+							<%= link_to 'Comments', club %>
+						</br>
       				<%= link_to 'Evaluate this club!', new_club_eval_path(club.id) %>
     				</div>
 					</li>
