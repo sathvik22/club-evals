@@ -1,5 +1,5 @@
 body{
-	background-color: #c90016;
+	background-color: #87bdd8;
 	text-align: center;
 	padding: 2rem 1rem;
 }
@@ -17,7 +17,7 @@ a{
 
 
 .panel{
-	background-color: #c90016;
+	background-color: #87bdd8;
 	width: 50%;
 	margin: auto;
 	border-bottom: 2px solid black;
@@ -26,11 +26,11 @@ a{
 	border-right: 2px solid black;
 }
 .top-bar{
-	background-color: #EF1B34;
+	background-color: #b7d7e8;
 }
 .accordion{
-	background-color: #F54C60
+	background-color: #cfe0e8
 }
 .accordion-content{
-	background-color: #A40013
+	background-color: #87bdd8
 }
