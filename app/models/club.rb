@@ -8,10 +8,10 @@ class Club < ApplicationRecord
 	end
 
 	def average_rating
-		evals.sum(&:rating).to_f / evals.length.to_f
+		(evals.sum(&:rating).to_f / evals.length.to_f).round(2)
 	end
 
 	def average_hours
-		evals.sum(&:hours).to_f / evals.length.to_f
+		(evals.sum(&:hours).to_f / evals.length.to_f).round(2)
 	end
 end
